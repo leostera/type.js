@@ -1,0 +1,13 @@
+{
+  "name": "type.js",
+  "version": "0.0.1",
+  "description": "A Runtime Type-System",
+  "main": "index.js",
+  "repository": "https://github.com/ostera/type.js",
+  "author": "Leandro Ostera <leandro@ostera.io>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ramda": "^0.25.0"
+  }
+}
