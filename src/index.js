@@ -1,3 +1,3 @@
-import Type from './type';
+import Type from './type.js';
 
 export default Type;

@@ -1,4 +1,4 @@
-import Type from 'type/type';
+import Type from './type';
 import toString from './toString';
 
 describe('Type: toString', () => {

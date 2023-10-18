@@ -1,16 +1,16 @@
-import { $$type, $$value, $$constructor } from 'type/symbols';
-import err from 'type/err';
-import toString from 'type/toString';
+import { $$type, $$value, $$constructor } from './symbols.js';
+import err from './err.js';
+import toString from './toString.js';
 
-import difference from 'ramda/src/difference';
-import equals from 'ramda/src/equals';
-import is from 'ramda/src/is';
-import isEmpty from 'ramda/src/isEmpty';
-import isNil from 'ramda/src/isNil';
-import length from 'ramda/src/length';
-import map from 'ramda/src/map';
-import take from 'ramda/src/take';
-import toPairs from 'ramda/src/toPairs';
+import difference from 'ramda/src/difference.js';
+import equals from 'ramda/src/equals.js';
+import is from 'ramda/src/is.js';
+import isEmpty from 'ramda/src/isEmpty.js';
+import isNil from 'ramda/src/isNil.js';
+import length from 'ramda/src/length.js';
+import map from 'ramda/src/map.js';
+import take from 'ramda/src/take.js';
+import toPairs from 'ramda/src/toPairs.js';
 
 /*
  * Tagged Type creation utility.

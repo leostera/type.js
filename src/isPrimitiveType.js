@@ -1,6 +1,6 @@
-import isNil from 'ramda/src/isNil';
-import any from 'ramda/src/any';
-import or from 'ramda/src/or';
+import isNil from 'ramda/src/isNil.js';
+import any from 'ramda/src/any.js';
+import or from 'ramda/src/or.js';
 
 /*
  * Helper function to determine whether a type is one of the 7 native primitive

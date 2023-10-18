@@ -1,0 +1,15 @@
+{
+  "version": "2",
+  "remote": {},
+  "npm": {
+    "specifiers": {
+      "ramda@^0.25.0": "ramda@0.25.0"
+    },
+    "packages": {
+      "ramda@0.25.0": {
+        "integrity": "sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==",
+        "dependencies": {}
+      }
+    }
+  }
+}

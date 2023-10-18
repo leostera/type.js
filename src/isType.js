@@ -1,8 +1,8 @@
-import { $$type, $$value } from './symbols';
+import { $$type, $$value } from './symbols.js';
 
-import is from 'ramda/src/is';
-import isNil from 'ramda/src/isNil';
-import length from 'ramda/src/length';
+import is from 'ramda/src/is.js';
+import isNil from 'ramda/src/isNil.js';
+import length from 'ramda/src/length.js';
 
 /*
  * Helper function to determine if a given value is a user-defined type.

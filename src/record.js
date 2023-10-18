@@ -1,30 +1,39 @@
-import err from 'type/err';
-import isPrimitiveType from 'type/isPrimitiveType';
-import isType from 'type/isType';
-import isTypedValue from 'type/isTypedValue';
-import toString from 'type/toString';
-import { $$type, $$constructor, $$value } from 'type/symbols';
+import err from './err.js';
+import isPrimitiveType from './isPrimitiveType.js';
+import isType from './isType.js';
+import isTypedValue from './isTypedValue.js';
+import toString from './toString.js';
+import { $$type, $$constructor, $$value } from './symbols.js';
 
-import capitalize from 'base/string/capitalize';
+import all from 'ramda/src/all.js';
+import and from 'ramda/src/and.js';
+import compose from 'ramda/src/compose.js';
+import concat from 'ramda/src/concat.js';
+import converge from 'ramda/src/converge.js';
+import difference from 'ramda/src/difference.js';
+import forEach from 'ramda/src/forEach.js';
+import fromPairs from 'ramda/src/fromPairs.js';
+import head from 'ramda/src/head.js';
+import is from 'ramda/src/is.js';
+import isEmpty from 'ramda/src/isEmpty.js';
+import isNil from 'ramda/src/isNil.js';
+import join from 'ramda/src/join.js';
+import keys from 'ramda/src/keys.js';
+import lensPath from 'ramda/src/lensPath.js';
+import map from 'ramda/src/map.js';
+import sortBy from 'ramda/src/sortBy.js';
+import tail from 'ramda/src/tail.js';
+import toLower from 'ramda/src/toLower.js';
+import toPairs from 'ramda/src/toPairs.js';
+import toUpper from 'ramda/src/toUpper.js';
+import unless from 'ramda/src/unless.js';
+import zip from 'ramda/src/zip.js';
 
-import all from 'ramda/src/all';
-import and from 'ramda/src/and';
-import compose from 'ramda/src/compose';
-import difference from 'ramda/src/difference';
-import forEach from 'ramda/src/forEach';
-import fromPairs from 'ramda/src/fromPairs';
-import head from 'ramda/src/head';
-import is from 'ramda/src/is';
-import isEmpty from 'ramda/src/isEmpty';
-import isNil from 'ramda/src/isNil';
-import join from 'ramda/src/join';
-import keys from 'ramda/src/keys';
-import lensPath from 'ramda/src/lensPath';
-import map from 'ramda/src/map';
-import sortBy from 'ramda/src/sortBy';
-import toPairs from 'ramda/src/toPairs';
-import toUpper from 'ramda/src/toUpper';
-import zip from 'ramda/src/zip';
+const capitalize = unless(
+  isNil,
+  converge(concat, [compose(toUpper, head), compose(toLower, tail)])
+);
+
 
 /*
  * Record Types creation utility.
